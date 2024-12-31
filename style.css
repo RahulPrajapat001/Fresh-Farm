@@ -293,7 +293,6 @@ padding: 0 20px;
 .product-row {
 display: flex;
 gap: 10px;
-overflow-x: ;
 padding: 20px 0;
 scroll-behavior: smooth;
 }
@@ -419,6 +418,7 @@ min-width: 250px;
     color: #333;
     text-decoration: none;
 }
+
 
 .container {
     display: flex;
@@ -720,4 +720,178 @@ color: #888;
     font-size: 2.5rem;
     color: var();
     margin-bottom: 1rem;
+}
+/* Mobile Navigation */
+@media screen and (max-width: 768px) {
+    /* Header */
+    .header-main {
+        padding: 15px 20px;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .search-container {
+        order: 3;
+        flex: 0 1 100%;
+        margin-top: 15px;
+    }
+
+    .header-icons {
+        gap: 15px;
+    }
+
+    /* Categories */
+    .categories {
+        padding: 10px;
+        overflow-x: auto;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    .category {
+        min-width: 70px;
+        width: auto;
+    }
+
+    /* Product Grid */
+    .container {
+        padding: 10px;
+    }
+
+    .product-row {
+        padding: 10px 0;
+    }
+
+    .product-card {
+        min-width: 200px;
+    }
+
+    /* Filter and Products Section */
+    .container {
+        flex-direction: column;
+    }
+
+    .filters {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    /* Slider */
+    .sliderx {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .slidex img {
+        height: 300px;
+    }
+
+    /* Farmers Section */
+    .farmers-grid {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .farmer-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Features Section */
+    .features_gridx {
+        gap: 2rem;
+        padding: 20px;
+    }
+
+    .feature-cardx {
+        padding: 20px;
+    }
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .header-main {
+        padding: 20px 30px;
+    }
+
+    .search-container {
+        flex: 0 1 300px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+
+    .farmers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small Phone Styles */
+@media screen and (max-width: 480px) {
+    .footer-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+    }
+
+    .subscribe-form button {
+        width: 100%;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .product-card {
+        min-width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .slidex img {
+        height: 200px;
+    }
+
+    fieldset {
+        margin: 20px;
+    }
+
+    legend {
+        font-size: 150%;
+        padding: 10px;
+    }
+}
+
+/* Fix for Horizontal Scrolling */
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Improve Touch Interactions */
+@media (hover: none) {
+    .nav-btn,
+    .action-button,
+    .btn {
+        padding: 12px 20px;
+    }
+
+    .category,
+    .footer-section ul li a {
+        padding: 8px 0;
+    }
 }
