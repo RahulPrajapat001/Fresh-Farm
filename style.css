@@ -41,7 +41,9 @@ header{position: sticky;}
 .nav-btn:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-
+a,a:visited,a:hover,a:active {
+    color: #000;
+}
 
 .top-banner {
     background: black;
